@@ -12,6 +12,7 @@ import com.bumptech.glide.Glide
 import com.example.dicoding_event_app.data.response.ListEventsItem
 import com.example.dicoding_event_app.helpers.DateHelper
 
+//Digunakan untuk membuat event geser di home fragment
 class GeserEventAdapter(private val onClick: (Int?) -> Unit) :
     RecyclerView.Adapter<GeserEventAdapter.EventResponseViewHolder>() {
 
@@ -23,6 +24,7 @@ class GeserEventAdapter(private val onClick: (Int?) -> Unit) :
         notifyDataSetChanged()
     }
 
+//    digunakan untuk mengambil data dari response
     class EventResponseViewHolder(
         itemView: View,
         private val onClick: (Int?) -> Unit
