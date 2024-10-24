@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,13 +25,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            tools:src="@tools:sample/avatars"
             android:contentDescription="@string/title"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/favorite"
+            app:layout_constraintBottom_toBottomOf="@id/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/baseline_favorite_border" />
 
         <TextView
             android:id="@+id/tvDetailEventName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            tools:text="Judul"
             android:textStyle="bold"
             android:layout_marginBottom="16dp"/>
 
@@ -39,6 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
+            tools:text="detailevent"
             android:drawablePadding="8dp"
             android:layout_marginBottom="8dp"/>
 
@@ -47,6 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
+            tools:text="detailwaktu"
             android:drawablePadding="8dp"
             android:layout_marginBottom="8dp" />
 
@@ -55,6 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
+            tools:text="kuota tersedia"
             android:drawablePadding="8dp"
             android:layout_marginBottom="8dp" />
 
@@ -64,6 +81,7 @@
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:paddingTop="8dp"
+            tools:text="deskripsi"
             android:paddingBottom="14dp" />
 
         <Button
